@@ -1,0 +1,136 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+
+:root {
+    orange: hsl(31, 77%, 52%)
+    cyan: hsl(184, 100%, 22%)
+    darkcyan: hsl(179, 100%, 13%)
+    lightgray: hsl(0, 0%, 95%)
+    transparent-white: hsl(0, 0%, 100%, 0.75)
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: rgb(236, 226, 226);
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    color: white;
+    max-width: fit-content;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+article {
+    max-width: 1440px;
+    height: 400px;
+    padding: 42px;
+    position: relative;
+}
+
+article.sedan {
+    background-color: orange;
+    border-radius: 7px 0 0 7px;
+}
+
+article.suv {
+    background-color: darkcyan;
+}
+
+article.luxury {
+    background-color: rgb(2, 53, 53);
+    border-radius: 0 7px 7px 0;
+}
+
+img {
+    margin-bottom: 36px;
+}
+
+h1 {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 36px;
+    color: lightgray;
+    margin-bottom: 1.5rem;
+}
+
+article p {
+    color: rgb(233, 231, 231);
+    font-size: 13.8px;
+    line-height: 1.5rem;
+}
+
+button {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    width: 146px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid lightgray;
+    font-family: inherit;
+    transition: all 0.5s ease-in-out;
+    bottom: 18px;
+}
+
+.sedan button {
+    background-color: lightgray;
+    color: orange;
+}
+
+.suv button {
+    background-color: lightgray;
+    color: darkcyan;
+}
+
+.luxury button {
+    background-color: lightgray;
+    color: rgb(2, 53, 53);
+}
+
+button:hover {
+    background-color: transparent;
+    color: lightgray;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.accolade {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    color: lightslategray;
+    bottom: 10px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+.accolade a {
+    text-decoration: none;
+    color: rgb(3, 3, 114);
+}
+
+.accolade a:hover {
+    color: orangered
+}
